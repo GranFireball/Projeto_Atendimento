@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from "react-router-dom";
+import Cliente from './pages/cliente.js';
+import Admin from './pages/admin.js';
+import Espera from './pages/espera.js';
+import SistemaProvider from './context/sistemaProvider.js';
+import Recepcao from './pages/recepcao.js';
+import Home from './pages/home.js';
+import Avaliacao from './pages/avaliacao.js';
+import Relatorio from './pages/relatorio.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SistemaProvider>
+    <Routes>
+      <Route path="/">
+        <Route index element={<Home/>}/>
+        <Route path='avaliacao' element={<Avaliacao/>}/>
+        <Route path='relatorio' element={<Relatorio/>}/>
+        <Route path='recepcao/'>
+          <Route index element={<Recepcao/>}/>
+          <Route path='admin' element={<Admin/>}/>
+          <Route path='cliente'element={<Cliente/>}/>
+          <Route path='espera' element={<Espera/>}/>
+        </Route>
+
+
+      </Route>
+    </Routes>
+    </SistemaProvider>
   );
 }
 
