@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+Esse projeto tem 3 funcionalidades principais: Recepção, Avaliação, Relatório.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Recepção: área do atendimento
 
-## Available Scripts
+- Administrador: essa área de administrador fica disponível apenas para os administradores, sendo acessada apenas com a validação da senha de administrador. Essa área permite saber a quantidade de clientes na fila de cada setor, e é utilizada para chamar o cliente que será atendido, mas para poder realizar esta ação, é necessário escolher o setor (área de interesse) do cliente, tendo a opção de imóveis e de protesto, e inserir o guichê que irá realizar o atendimento. Ao chamar o cliente, é informado os dados do cliente a ser atendido (setor, senha e guichê).
 
-In the project directory, you can run:
+- Cliente: essa área é utilizada para gerar a senha do cliente. Para realizar esta ação, é necessário escolher o setor desejado, indicando o assunto que será tratado no atendimento. Ao selecionar o setor, basta clicar no botão para gerar a senha, que é gerada a senha do cliente com a informação do setor que foi escolhido.
 
-### `npm start`
+- Lista de Chamadas: essa área é utilizada para fazer o controle dos clientes na fila. Para isso, é mostrado para cada setor, o nome do setor, a última senha chamada para atendimento, e o guichê correspondente.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Avaliação: área da avaliação
 
-### `npm test`
+- Essa função permite que o cliente avalie o atendimento. Para isso, é necessário escolher o setor que foi feito o atendimento e em seguida, dar a nota de 1 a 5 estrelas. Ao preencher esses dados, basta clicar no botão para avaliar, que a avaliação é realizada.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Relatório: área do relatório
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Essa função permite visualizar:
+  - A quantidade de clientes totais de cada setor, com base na quantidade de senhas retiradas.
+  - As avaliações realizadas de cada setor, através da quantidade de avaliações para cada número de estrelas (1 a 5 estrelas)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Além da visualização dos dados, é possível gerar o PDF do relatório. Ou seja, ao clicar no botão para gerar o PDF, é realizado o download do PDF com os dados que são exibidos no relatório.
