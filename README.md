@@ -1,3 +1,14 @@
+![home](https://github.com/GranFireball/Projeto_Atendimento/assets/61765704/c3e781a7-fcf0-44fb-a882-6cc5a82832fe)
+![recepcao](https://github.com/GranFireball/Projeto_Atendimento/assets/61765704/48a1dced-b6c4-437c-b5e6-1fb97f43537c)
+![listaChamadas](https://github.com/GranFireball/Projeto_Atendimento/assets/61765704/363e2978-f44e-44f7-98c0-e7927066da69)
+![admin](https://github.com/GranFireball/Projeto_Atendimento/assets/61765704/5bf7ba33-1f48-4ada-ab05-67efe1c45e49)
+![cliente](https://github.com/GranFireball/Projeto_Atendimento/assets/61765704/b0d64a19-b0cf-4d28-b8b1-4b77b7aa7c5d)
+![avaliacao](https://github.com/GranFireball/Projeto_Atendimento/assets/61765704/6800db8e-2c4a-4e24-a179-55808fb165f1)
+![relatorio](https://github.com/GranFireball/Projeto_Atendimento/assets/61765704/d750438d-697d-4f99-98cb-f286a910a9e1)
+![pdf](https://github.com/GranFireball/Projeto_Atendimento/assets/61765704/2a83afcd-a8ef-47f6-a252-6088aa15b4db)
+
+## Sobre o Projeto
+
 Esse projeto tem 3 funcionalidades principais: Recepção, Avaliação, Relatório.
 
 Recepção: área do atendimento
@@ -21,3 +32,7 @@ Relatório: área do relatório
   - As avaliações realizadas de cada setor, através da quantidade de avaliações para cada número de estrelas (1 a 5 estrelas)
 
 - Além da visualização dos dados, é possível gerar o PDF do relatório. Ou seja, ao clicar no botão para gerar o PDF, é realizado o download do PDF com os dados que são exibidos no relatório.
+
+## Link do Vídeo apresentando o Projeto
+
+Link: https://www.linkedin.com/feed/update/urn:li:activity:7166127527931981827/
